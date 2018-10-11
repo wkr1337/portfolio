@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+<div class="header">
+    <h1>My portfolio</h1>
+    <p>This is my portfolio website.</p>
+  </div>
+  
+  <div class="navigation_bar">
+      <ul id="navBar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a class="active" href="testjs.html">Testing page</a></li>
+    <li><a href="#">Link</a></li>
+</ul>
+  </div>
+  
+  <!-- input of these forms are put together -->
+  <form id="frm1" action="javascript:void(0);">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input type="button" onclick="multiplyMyNumbers()" value="Submit"><br>
+  </form>
+  
+  <div id="outputMultiply"></div>
+  <br>
+
+  <!-- upload files, get info about files -->
+  <input type="file" id="myFile" class="myFile" multiple onchange="getFileInfo('0');">
+  <input type="file" id="myFile" class="myFile" multiple onchange="getFileInfo('1');">
+  
+  <div id="displayFileInfo"></div>
+  <!-- <textarea name="textArea1" id="textArea1" cols="30" rows="10"></textarea> -->
+
+
+
+
+
+
+
+
+  <div class="imageDiv">
+    <img class="image" src="image/man.png" alt="avatar" onclick="myFunction();"><br />
+    <button type="button" onclick="changeImageToText();">Hide image</button>
+</div>
+
+    <button onclick="selectAllImageTags('1');">Duplicate images</button>
+    <button onclick="selectAllImageTags('0');">Remove all images</button>
+
+
+    <div class="testInsertDiv"></div>
+    <button onclick="scrollBack();">scrollBack</button>
+
+  <div class="footer">
+        <h2>Footer</h2>
+      </div>
+      <script src="js/testJavaScript.js">
+      </script>
+  </body>
+  </html>

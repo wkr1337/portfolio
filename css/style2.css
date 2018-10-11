@@ -1,0 +1,382 @@
+/* DELETE THE MARGIN */
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: calibri;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    padding: inherit;
+} */
+/* body {
+    margin: 0;
+} */
+
+/* delete list style, remove padding and margin */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+        background-color: #ddd;
+        color: black;
+}
+
+nav .nav-icon {
+    display: none;
+}
+
+.drop-down-nav {
+    display: none;
+}
+
+
+
+
+/* 
+nav {
+    background:cornflowerblue;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    float: left;
+}
+nav ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+} */
+/* 
+h1.h1header {
+    margin: 0;
+}
+p.pheader {
+    margin: 0;
+} */
+/* full screen header with background image */
+.header-container {
+    height: 100vh;
+    background: url(../img/pic1.jpeg) no-repeat center center;
+    /* Add the blur effect */
+  /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px */
+    /* opacity: 0.5; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  
+    
+}
+
+.header {
+    color: white;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+ /* Display wrapper as grid */
+ .wrapper {
+    height: minmax(50vh, auto);
+
+    background-color: rgb(178, 211, 211);
+    padding: 4em;
+    padding-top: 4em;
+ }
+ .projects-text {
+    text-align: center;
+ }
+.projects-wrapper {
+    
+    display: grid;
+    padding-top: 1em;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* add grid-gap to add a gap between the columns and rows. */
+    grid-gap: 1em;
+    /* 100px by default, if content is longer it will stretch */
+    grid-auto-rows: minmax(100px, auto);
+    /* height: 50vh; */
+}
+/* Select all the divs inside the wrapper div and make them light gray */
+/* Add nice shadow to the divs */
+.projects-wrapper > div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    background: #eee;
+    padding: 1em;
+}
+
+/* Select all the odd divs inside the wrapper div and make them dark gray */
+.projects-wrapper >:nth-child(odd){
+    background: #ddd;
+}
+
+/* .footer h2{
+    margin: 0;
+} */
+.wrapper2 {
+    /* object-fit: cover; */
+    height: minmax(50vh, auto);
+    background: #999;
+    padding: 10% 20%;
+}
+.wrapper2 h2 {
+    text-align: center;
+}
+
+.skills-container {
+    /* width: 80%; */
+    /* display: inline; */
+    background-color: #ddd;
+    /* border: rgb(247, 11, 11) 1px solid; */
+    /* box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+.skills-div {
+    /* object-fit: fill; */
+    
+    display: inline-block;
+    text-align: right;
+    padding: 5px;
+    color:white;
+    border: #333 1px solid;
+    /* height: 5px; */
+    /* Add border to text */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* Set the skill bar level */
+.skills-html {
+    width: 35%;
+    background-color: rgb(18, 187, 26);
+}
+.skills-css {
+    width: 20%;
+    background-color: rgb(18, 187, 26);
+}
+.skills-js {
+    width: 15%;
+    background-color: rgb(18, 187, 26);
+}
+.skills-php {
+    width: 25%;
+    background-color: rgb(18, 187, 26);
+}
+.skills-java {
+    width: 50%;
+    background-color: rgb(18, 187, 26);
+}
+.skills-python {
+    width: 50%;
+    background-color: rgb(18, 187, 26);
+}
+.skills-sql {
+    width: 45%;
+    background-color: rgb(18, 187, 26);
+}
+.skills-r {
+    width: 10%;
+    background-color: rgb(18, 187, 26);
+}
+
+/* Contact form */
+.wrapper3 {
+    height: minmax(50vh, auto);
+
+    /* height: 50vh; */
+    background: rgb(178, 211, 211);
+    padding: 5em 20em;
+}
+
+.contact-form-wrapper {
+    /* display: block; */
+    /* height: minmax(50vh, auto); */
+    /* float: left; */
+    /* height: 50vh; */
+    /* background: rgb(31, 31, 134);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    background: #f2f2f2;
+    padding: 1em;
+    /* text-align: center; */
+    /* margin: 0 20em; */
+}
+
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    padding: 10px; /* Some padding */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    border-radius: 4px; /* Rounded borders */
+    border: 1px solid #ccc; /* Gray border */
+
+
+
+
+}
+.contact-form-text {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+    cursor: pointer;
+}
+/* .contact-form-form {
+    display: grid;
+    padding: 5em;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+
+}
+.contact-form-form > div {
+    background: #eee;
+    padding: 1em;
+    z-index: 99;
+} */
+/* .contact-form-form >:nth-child(odd){
+    background: #ddd;
+} */
+/* .contact-form-text {
+    width: 35%;
+    float: left;
+
+} */
+
+.scroll-back-to-top {
+    text-align: center;
+}
+.scroll-back-to-top-button {
+    position: relative;
+    background-color: red;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    bottom: 0px;
+    color: white;
+
+
+}
+
+.scroll-back-to-top-button:hover {
+    cursor: pointer;
+    background-color: rgb(248, 51, 51);
+}
+
+/* Footer */
+.footer {
+    height: 10vh;
+    width: 100%;
+    background: #ddd;
+    text-align: center;
+    padding-top: 1em;
+    color: #333;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper3 {
+        padding: 1em;
+    }
+}
+/* change navbar on smaller screen */
+@media screen and (max-width: 500px) {
+    nav .li-hideable {
+        /* text-align: center; */
+        /* float: none; */
+        display: none;
+    }
+    nav .nav-icon{
+        float: right !important;
+        display: block !important;
+    }
+    /* .navBar .responsive {
+        position: relative;
+        display: block;
+    }
+  .navBar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navBar .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navBar.responsive .dropdown {
+      float: none;
+    }
+  .navBar.responsive .dropdown-content {
+      position: relative;
+    }
+  .navBar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  } */
+    .wrapper3 {
+        padding: 0;
+    }
+    .projects-wrapper {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .projects-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
